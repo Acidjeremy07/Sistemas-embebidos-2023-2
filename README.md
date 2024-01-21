@@ -2,16 +2,13 @@ Prácticas elaboradas en el 2023/2 en la materia de Sistemas Embebidos, usando:
 - Quartus FPGA usanado tarjetas como DEO nano y DE1 ambas cyclone ii
 - Arduino uno
 - ESP8266
-- Sensor de humedad y temperatura DHT11
-- Sensor de distancia lasér vl53l0x
 - Pantalla LCD 16x2 con módulo de interfaz I2C
-- Pantalla LCD 16x2 sin módulo I2C usando protocolo de comunicación en Quartus FPGA prime
 - LCD 16x2 sin módulo I2C y usando arduino
 - Matriz de leds 8x8
 - Displays de 7 segmentos
 - Usbusart usando los puertos de comunicación serial
 - Teclado matricial
-- Uso de SPIFFS para esp8266
+- Uso de SPIFFS para ESP8266
   
 Se puede ver el código realizado y en algunos casos simulaciónes realizadas en modelsim y en Proteus 8.16
 Dentro de la carpeta "reportes" viene de manera un poco detallada como fue la elaboración y explicación
