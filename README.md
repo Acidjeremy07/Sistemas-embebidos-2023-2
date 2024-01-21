@@ -26,8 +26,8 @@ Dentro del proyecto "teclado_usart_lcd" se usan los puertos de comunicación ser
   del teclado matricial si presionamos dos veces el mismo botón en un corto tiempo se escribira una
   letra después de la D ya que la D se encuentra de igual manera en el teclado matricial
   
-    Falta corregir:
-    
+Falta corregir :
+
   -Desde el teclado matricial al presionar dos veces hace que se imprima el número o letra
     correspondiente y después lo que se debería imprimir cuando se pulsa dos veces por ejemplo al
     presionar 1 dos veces debería aparecer únicamente la letra E, sin embargo, aparece E1 esto solo
@@ -41,7 +41,9 @@ Dentro del proyecto "teclado_usart_lcd" se usan los puertos de comunicación ser
 Dentro del proyecto "menu_leds" se requiere de 7 leds y 2 botones, de manera inicial se hará una
   animación cuando se presione alguno de los botones se procederá hacer otra animación así como si los
   dos son presionados al mismo se hará una nueva animación
+  
   Falta corregir:
+  
   - No se ejecuta de ninguna manera la animación cuando los dos bótones son pulsados simultaneamente
   - A veces no se capta bien cuando se busca cambiar de una animación a otra o regresar a la inicial
  
