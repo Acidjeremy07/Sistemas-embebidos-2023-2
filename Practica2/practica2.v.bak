@@ -1,0 +1,47 @@
+module practica2(
+	input [5:0]  a_input,
+	input [5:0] b_input,
+	input [2:0] selection,
+	//output [5:0] res_output
+	output [6:0] disp1,
+	output [6:0] disp2,
+	output [6:0] disp3
+);
+	reg [11:0]res_output;
+	always @(a_input, b_input, selection)
+	begin
+		case (selection)
+			3'b000:
+				res_output = a_input + b_input;
+			3'b001:			
+				res_output = a_input - b_input;
+			3'b010:	
+				res_output = a_input * b_input;
+			3'b011: 
+				res_output = a_input | b_input;
+			3'b100:
+				res_output = a_input & b_input;
+			3'b101:
+				res_output = a_input >> b_input;
+			3'b110:
+				res_output = a_input << b_input;
+			3'b111: 
+				res_output = a_input ^ b_input;
+	
+		endcase
+	end
+	
+	disp7 display0(
+		.input_number (res_output[3:0]),
+		.display_output (disp_0)
+	);
+
+	disp7 display1(
+		.input_number (res_output[7:4]),
+		.display_output (disp_1)
+	);
+	disp7 display2(
+		.input_number (res_output[11:8]),
+		.display_output (disp_2)
+	);
+endmodule
