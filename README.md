@@ -17,6 +17,7 @@ del código realizado
 Dentro del proyecto de "Voltimetro" elaborada en arduino se usan dos displays de 7 segmentos donde sus
   segmentos estan multiplexados por lo que aunque el número sea estático en realidad el cambio de un
   digito a otro es muy rápido
+  
 Dentro del proyecto "teclado_usart_lcd" se usan los puertos de comunicación serial para el usbusart
   una pantalla LCD sin el módulo I2C y un teclado matricial, cada digito del teclado matricial generico
   de 4x4 escribe su respectivo id, como el botón 1 escribe 1 en el LCD y en el serial monitor de arduino
@@ -24,15 +25,19 @@ Dentro del proyecto "teclado_usart_lcd" se usan los puertos de comunicación ser
   escribe dentro del serial monitor del arduino esto también se escribira en la LCD, además si dentro
   del teclado matricial si presionamos dos veces el mismo botón en un corto tiempo se escribira una
   letra después de la D ya que la D se encuentra de igual manera en el teclado matricial
+  
     Falta corregir:
+    
   -Desde el teclado matricial al presionar dos veces hace que se imprima el número o letra
     correspondiente y después lo que se debería imprimir cuando se pulsa dos veces por ejemplo al
     presionar 1 dos veces debería aparecer únicamente la letra E, sin embargo, aparece E1 esto solo
     en la LCD
+  
   -Cuando mandamos un mensaje desde el serial monitor el mensaje se escribe de manera correcta dentro
     de la LCD, sin embargo, si se sobrepasa de los 16 bits de espacio de la LCD los otros datos no se
     verán aunque si se crea o manda otro mensaje se recorrera dejando ver que si estan almacenadas
     todas las letras o símbolos que se mandaron desde el serial monitor
+    
 Dentro del proyecto "menu_leds" se requiere de 7 leds y 2 botones, de manera inicial se hará una
   animación cuando se presione alguno de los botones se procederá hacer otra animación así como si los
   dos son presionados al mismo se hará una nueva animación
