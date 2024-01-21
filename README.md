@@ -12,8 +12,10 @@ Prácticas elaboradas en el 2023/2 en la materia de Sistemas Embebidos, usando:
 - Usbusart usando los puertos de comunicación serial
 - Teclado matricial
 - Uso de SPIFFS para esp8266
+  
 Se puede ver el código realizado y en algunos casos simulaciónes realizadas en modelsim y en Proteus 8.16
-Dentro de las prácticas que se pueden ver algunas de ellas vienen con reporte
+Dentro de la carpeta "prácticas que se pueden ver algunas de ellas vienen con reporte
+
 Dentro del proyecto de "Voltimetro" elaborada en arduino se usan dos displays de 7 segmentos donde sus
   segmentos estan multiplexados por lo que aunque el número sea estático en realidad el cambio de un
   digito a otro es muy rápido
